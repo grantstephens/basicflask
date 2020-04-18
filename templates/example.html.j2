@@ -1,0 +1,31 @@
+{% extends "template.html.j2" %}
+
+{% block body %}
+
+<div class="row">
+  <div class="col-12">
+    <h1>Some Heading</h1>
+  </div>
+  <div class="col-12">
+    <form action="/action" method="get">
+      <div class="form-group">
+        <label for="ssid">Text Input</label>
+        <input class="form-control" type="text" name="inputtext" id="sometext" placeholder="Placeholder">
+      </div>
+      <div class="form-group">
+        <label for="security">Drop Down</label>
+        <select class="form-control" name="somechoice" id="choice">
+          <option value="o1">Option1</option>
+          <option value="o2">Option2</option>
+          <option value="">None</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-lg btn-success" type="submit">Next Button</button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+{% endblock %}
